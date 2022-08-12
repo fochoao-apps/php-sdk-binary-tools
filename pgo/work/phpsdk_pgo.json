@@ -1,0 +1,67 @@
+{
+    "nginx": {
+        "pkg_url": "https:\/\/nginx.org\/download\/nginx-1.17.6.zip",
+        "host": "127.0.0.1",
+        "port": 8081
+    },
+    "mariadb": {
+        "pkg_url": "https:\/\/downloads.mariadb.com\/MariaDB\/mariadb-10.3.22\/win32-packages\/mariadb-10.3.22-win32.zip",
+        "host": "localhost",
+        "port": 3307,
+        "user": "root",
+        "pass": ""
+    },
+    "postgresql": {
+        "pkg_url": "https:\/\/get.enterprisedb.com\/postgresql\/postgresql-9.6.8-1-windows-binaries.zip",
+        "host": "localhost",
+        "port": 5434,
+        "user": "root",
+        "pass": ""
+    },
+    "php": {
+        "fcgi": {
+            "host": "127.0.0.1",
+            "port": 9001
+        },
+        "fcgi:env": {
+            "PHP_FCGI_CHILDREN": 8,
+            "PHP_FCGI_MAX_REQUESTS": 0
+        },
+        "scenario": {
+            "cache": {
+                "ini": {
+                    "arm64": {
+                        "opcache.memory_consumption": 256,
+                        "opcache.interned_strings_buffer": 16,
+                        "opcache.max_accelerated_files": 8000,
+                        "opcache.jit_buffer_size": "32M"
+                    },
+                    "x64": {
+                        "opcache.memory_consumption": 256,
+                        "opcache.interned_strings_buffer": 16,
+                        "opcache.max_accelerated_files": 8000,
+                        "opcache.jit_buffer_size": "32M"
+                    },
+                    "x86": {
+                        "opcache.memory_consumption": 64,
+                        "opcache.interned_strings_buffer": 8,
+                        "opcache.max_accelerated_files": 4000,
+                        "opcache.jit_buffer_size": "16M"
+                    }
+                }
+            }
+        }
+    },
+    "pgo01org": {
+        "pgo01org_zip_url": "https:\/\/github.com\/intel\/php_pgo_training_scripts\/archive\/master.zip",
+        "type": "web",
+        "srv_http": "nginx",
+        "srv_db": "mariadb",
+        "http_port": 8082,
+        "http_host": "127.0.0.1",
+        "db_port": 3307,
+        "db_host": "localhost",
+        "db_user": "root",
+        "db_pass": ""
+    }
+}

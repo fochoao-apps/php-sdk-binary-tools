@@ -1,0 +1,11 @@
+2022/08/11 10:43:22 [notice] 9972#11500: signal process started
+2022/08/11 10:43:34 [emerg] 800#14072: bind() to 0.0.0.0:8082 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2022/08/11 10:43:37 [notice] 3540#8608: signal process started
+2022/08/11 10:43:37 [error] 3540#8608: CreateFile() "C:\php-sdk-binary-tools\pgo\work\server\nginx/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2022/08/11 10:59:41 [notice] 984#13936: signal process started
+2022/08/11 10:59:54 [emerg] 15244#13936: bind() to 0.0.0.0:8082 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2022/08/11 10:59:57 [notice] 11868#12296: signal process started
+2022/08/11 10:59:57 [error] 11868#12296: CreateFile() "C:\php-sdk-binary-tools\pgo\work\server\nginx/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2022/08/11 11:00:15 [emerg] 11436#9312: bind() to 0.0.0.0:8082 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
+2022/08/11 11:03:44 [notice] 9252#4528: signal process started
+2022/08/11 11:03:44 [error] 9252#4528: CreateFile() "C:\php-sdk-binary-tools\pgo\work\server\nginx/logs/nginx.pid" failed (2: The system cannot find the file specified)
